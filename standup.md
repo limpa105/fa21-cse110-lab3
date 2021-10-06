@@ -1,6 +1,6 @@
-# **Stan Up Meeting Notes**
+# **Standup Meeting Notes**
 
-# Catch ups From All Group Memembers 
+# Updates from all of the Group Memembers 
 ### replicate for as many team members as you have
 ## Name: 
 # What did I finish yesterday?
