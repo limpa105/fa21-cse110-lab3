@@ -1,0 +1,38 @@
+body {
+    background-color: rgba(177, 250, 240, 0.884);
+  }
+  
+  h1 {
+    color: #800080;
+  }
+
+  .people {
+     color: hsl(279, 100%, 30%)
+  }
+ h3 {
+     background-color: thistle;
+
+ }
+
+ label[for = "love"] {
+     color: red
+ }
+
+ #date{
+    color: darkred
+}
+
+*{
+    color: hsl(235, 100%, 20%)
+}
+
+summary:hover
+{
+    background-color: yellow;
+}
+
+p:hover{
+    background-color: rgb(62, 248, 25)
+}
+
+
