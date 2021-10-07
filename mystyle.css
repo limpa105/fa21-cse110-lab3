@@ -4,7 +4,7 @@ body {
   }
 
 /* teal will be too harsh on a phone */
-@media only screen and (max-width: 320px) 
+@media screen and (max-width: 600px) 
  { body{background-color: rgb(182, 182, 253);}
 }
   @font-face {
@@ -152,17 +152,21 @@ input[type="submit"]:active{
     background-color: thistle;
 }
 
-
+@media screen and (min-width: 800px){
 #media {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: non-wrap;
 }
+}
 
+
+@media screen and (min-width: 800px){
 #discussion {
     display: grid;
     grid-template-columns: 1fr 1fr ;
     column-gap: .025px;
     row-gap: 5px;
+}
 }
