@@ -1,35 +1,65 @@
+
 body {
     background-color: rgba(177, 250, 240, 0.884);
   }
 
+/* teal will be too harsh on a phone */
+@media only screen and (max-width: 320px) 
+ { body{background-color: rgb(182, 182, 253);}
+}
   @font-face {
-    font-family:Explora  ;
+    font-family:Explora;
     src: url(https://fonts.gstatic.com/s/explora/v1/tsstApxFfjUH4wrvQ12Fo1K0rqY.woff2);
   }
+  #secret{
+      display: none 
+  }
 
+  #meeting_topic{
+    position: fixed;
+  }
   h1 {
     color: #800080;
     text-align: center;
-    font-family: monospace
+    font-family: monospace;
+    font-size: 3em;
+    position: relative;
+    top: .25in;
+    left: .25in;
+    right: 1in;
+    bottom: 5in;
+
   }
 
   .people {
-     color: hsl(279, 100%, 30%)
+     color: hsl(279, 100%, 30%);
   }
- h3 {
+  h3 {
      background-color: thistle;
      font-family: Explora;
-    font-size: x-large;
+     font-size: x-large;
+     margin: auto;
+     padding: 1.5ex 1.5ex 1.5ex 1.5ex; 
+     display: block 
 
  }
 
  label[for = "love"] {
-     color: red
+     color: red;
+     border: 2px solid red;
+     padding: .04em;
  }
 
  #date{
+    position: relative;
     color: darkred
 }
+p{
+    margin: .5cm 1cm 1cm 1cm;
+    max-width: fit-content;
+    min-width: 5cm;
+}
+
 
 *{
     color: hsl(235, 100%, 20%)
@@ -40,11 +70,18 @@ summary:hover
     background-color: yellow;
 }
 
-p:hover{
-    background-color: rgb(62, 248, 25)
+summary{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
-h2, h3, h4,{font-family: sans-serif;}
+p:hover{
+    background-color: rgb(62, 248, 25);
+}
+
+h2, h4 {font-family: sans-serif;}
 
 #media > h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -70,3 +107,62 @@ ol li{
 
 p.explain {font-family: monospace;} 
 
+form  {
+    margin: 2.5pc 5pc 10pc 2.5pc;
+}
+
+label[for = "yes"]{
+    padding-top: 1.5ch;
+    padding-bottom: 1.5ch;
+    padding-left: 1.5ch;
+    padding-right: 1.5ch;
+    border: 10Q solid;
+    border-color: thistle;
+    border-radius: 2lh;
+    display: inline;
+}
+
+label[for = "next_date"]{
+    padding-top: 1.5ch;
+    padding-bottom: 1.5ch;
+    padding-left: 1.5ch;
+    padding-right: 1.5ch;
+    border: 10Q solid thistle;
+    border-radius: 2lh;
+    border-width: 1vmin;
+    display: inline;
+}
+
+label[for = "weather"]{
+    padding-top: 1.5ch;
+    padding-bottom: 1.5ch;
+    padding-left: 1.5ch;
+    padding-right: 1.5ch;
+    border: 10Q solid thistle;
+    border-radius: 2lh;
+    border-width: 1vmin;
+    display: inline;
+}
+
+button:active{
+    background-color: thistle;
+}
+
+input[type="submit"]:active{
+    background-color: thistle;
+}
+
+
+#media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: non-wrap;
+}
+
+#discussion {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: .025px;
+    row-gap: 5px;
+}
