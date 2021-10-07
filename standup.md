@@ -1,4 +1,5 @@
 # **Standup Meeting Notes**
+## Date: 
 
 ## Updates from all of the Group Memembers 
 #### replicate for as many team members as you have
